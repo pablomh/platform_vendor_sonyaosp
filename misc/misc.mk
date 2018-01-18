@@ -15,6 +15,9 @@
 # Exclude SystemUI test packages
 EXCLUDE_SYSTEMUI_TESTS := true
 
+# Exclude serif fonts for saving system size
+EXCLUDE_SERIF_FONTS := true
+
 # Kernel-headers FLAG
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
