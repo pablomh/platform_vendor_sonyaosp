@@ -1,0 +1,6 @@
+type mnt_exfat, coredomain, domain;
+type mnt_exfat_exec, exec_type, file_type;
+
+init_daemon_domain(mnt_exfat)
+
+permissive mnt_exfat;

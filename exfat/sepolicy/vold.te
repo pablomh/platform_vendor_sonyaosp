@@ -1,0 +1,6 @@
+# Filesystem tools
+allow vold kernel:system module_request;
+
+# External storage
+allow vold { mnt_exfat_exec mkfs_exfat_exec }:file rx_file_perms;
+allow vold storage_stub_file:dir rw_dir_perms;

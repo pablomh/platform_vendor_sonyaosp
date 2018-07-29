@@ -1,0 +1,4 @@
+# Filesystem tools
+/system/bin/fsck\.exfat               u:object_r:fsck_exec:s0
+/system/bin/mkfs\.exfat               u:object_r:mkfs_exfat_exec:s0
+/system/bin/mount\.exfat              u:object_r:mnt_exfat_exec:s0
