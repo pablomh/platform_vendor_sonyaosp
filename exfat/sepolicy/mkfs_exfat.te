@@ -1,9 +1,0 @@
-type mkfs_exfat, coredomain, domain;
-type mkfs_exfat_exec, exec_type, file_type;
-
-init_daemon_domain(mkfs_exfat)
-
-# Allow formatting userdata or cache partitions
-allow mkfs_exfat block_device:dir search;
-allow mkfs_exfat userdata_block_device:blk_file rw_file_perms;
-allow mkfs_exfat cache_block_device:blk_file rw_file_perms;
