@@ -22,7 +22,11 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_NEW_ION_HEAP    := true
 TW_USE_TOOLBOX := true
+ifneq ($(filter aosp_h82% aosp_h83%, $(TARGET_PRODUCT)),)
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+else
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+endif
 ifneq ($(filter aosp_g81% aosp_h82% aosp_h83%, $(TARGET_PRODUCT)),)
 TW_MAX_BRIGHTNESS  := 4095
 else
