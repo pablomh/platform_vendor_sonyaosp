@@ -6,6 +6,7 @@
 /cache           ext4      /dev/block/bootdevice/by-name/cache
 /data            ext4      /dev/block/bootdevice/by-name/userdata
 /recovery        emmc      /dev/block/bootdevice/by-name/FOTAKernel                          flags=backup=1
+/persist         ext4      /dev/block/bootdevice/by-name/persist
 
 # Removable storage
 /sdcard1         auto      /dev/block/mmcblk1p1                       /dev/block/mmcblk1     flags=display="Micro SDcard";storage;wipeingui;removable

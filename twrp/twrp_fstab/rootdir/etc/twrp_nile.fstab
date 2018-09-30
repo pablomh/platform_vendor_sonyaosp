@@ -6,6 +6,7 @@
 /vendor_image    emmc      /dev/block/bootdevice/by-name/vendor                              flags=backup=1;slotselect
 /odm             ext4      /dev/block/bootdevice/by-name/oem                                 flags=backup=1;slotselect
 /data            ext4      /dev/block/bootdevice/by-name/userdata
+/persist         ext4      /dev/block/bootdevice/by-name/persist
 
 # Removable storage
 /sdcard1         auto      /dev/block/mmcblk1p1                       /dev/block/mmcblk1     flags=display="Micro SDcard";storage;wipeingui;removable
