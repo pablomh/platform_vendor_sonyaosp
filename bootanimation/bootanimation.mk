@@ -26,3 +26,9 @@ ifneq ($(filter aosp_f512% aosp_f813% aosp_f833% aosp_g823% aosp_g814% aosp_g834
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
 endif
+
+# bootanimation (1440p)
+ifneq ($(filter aosp_h84% aosp_h94%, $(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES +=  \
+    $(LOCAL_PATH)/bootanimation/1440p/bootanimation.zip:system/media/bootanimation.zip
+endif
