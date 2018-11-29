@@ -27,6 +27,3 @@ ifneq ($(filter aosp_g814%, $(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.display-size=3840x2160
 endif
-
-# CameraHAL path
-SRC_CAMERA_HAL_DIR := hardware/qcom/camera
