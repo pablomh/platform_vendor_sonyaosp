@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-BOARD_SEPOLICY_DIRS += vendor/sonyaosp/*/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/sonyaosp/*/sepolicy
 
 $(call inherit-product-if-exists, vendor/sonyaosp/*/*.mk)
