@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # SELinux
-# BOARD_USE_ENFORCING_SELINUX := true
+BOARD_USE_ENFORCING_SELINUX := true
 
 # SELinux
 PRODUCT_PROPERTY_OVERRIDES += \
