@@ -27,3 +27,9 @@ ifneq ($(filter aosp_g814%, $(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.display-size=3840x2160
 endif
+
+# exFAT support
+PRODUCT_PACKAGES += \
+    fsck.exfat \
+    mkfs.exfat \
+    exfatlabel
