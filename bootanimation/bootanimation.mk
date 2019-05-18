@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES +=  \
 endif
 
 # bootanimation (1080p)
-ifneq ($(filter aosp_f512% aosp_f813% aosp_f833% aosp_g823% aosp_g814% aosp_g834% aosp_h%13 aosp_h82% aosp_h83%, $(TARGET_PRODUCT)),)
+ifneq ($(filter aosp_f512% aosp_f813% aosp_f833% aosp_g823% aosp_g814% aosp_g834% aosp_h%13 aosp_h82% aosp_h83% aosp_i%13, $(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
 endif
