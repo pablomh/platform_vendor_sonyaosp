@@ -14,7 +14,8 @@
 
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=android-google \
+    ro.com.google.clientidbase=android-sonymobile \
+    ro.com.google.clientidbase.ms=android-sonymobile \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.setupwizard.enterprise_mode=1 \
